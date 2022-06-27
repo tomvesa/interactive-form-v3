@@ -66,6 +66,7 @@ designInput.addEventListener('change', e => {
 // first hide all and then display relevant selection based on designInput value       
     hideElementsAll('#color option');
     dipsplayElementsAll(`#color option[data-theme = "${designInput.value}"]`);
+    colorTheme.querySelector('option').selected = true;
 });
 
 // Activities
